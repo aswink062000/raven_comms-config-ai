@@ -1,0 +1,22 @@
+{
+  "variables": [
+    "CUST_FULL_NM",
+    "LOAN_AMT",
+    "LOAN_TYPE",
+    "INTEREST_RATE",
+    "LOAN_TERM",
+    "ACCT_NO",
+    "APPROVAL_DT",
+    "DOC_DESC_NM"
+  ],
+  "sampleData": {
+    "CUST_FULL_NM": "Priya Sharma",
+    "LOAN_AMT": "₹25,00,000",
+    "LOAN_TYPE": "Home Loan",
+    "INTEREST_RATE": "8.5%",
+    "LOAN_TERM": "20 years",
+    "ACCT_NO": "XXXX4321",
+    "APPROVAL_DT": "2026-05-18",
+    "DOC_DESC_NM": "Loan Approval Notification"
+  }
+}

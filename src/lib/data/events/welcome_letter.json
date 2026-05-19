@@ -1,0 +1,35 @@
+{
+  "title": "welcome_letter",
+  "properties": {
+    "params": {
+      "required": [
+        "fullName",
+        "accountNumber",
+        "accountType",
+        "openingDate",
+        "branchName",
+        "customerServiceNumber"
+      ],
+      "properties": {
+        "fullName": {
+          "type": "string"
+        },
+        "accountNumber": {
+          "type": "string"
+        },
+        "accountType": {
+          "type": "string"
+        },
+        "openingDate": {
+          "type": "string"
+        },
+        "branchName": {
+          "type": "string"
+        },
+        "customerServiceNumber": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

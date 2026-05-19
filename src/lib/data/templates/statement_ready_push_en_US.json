@@ -1,0 +1,21 @@
+{
+  "type": "PUSH",
+  "event": "statement_ready",
+  "locale": ["en_US"],
+  "metadata": {
+    "default": {
+      "templateContentId": "FFASK006",
+      "attributes": {
+        "CUST_FULL_NM": "$params.fullName",
+        "ACCT_NO": "$params.accountNumber",
+        "STMT_PERIOD": "$params.statementPeriod",
+        "STMT_DT": "$params.statementDate",
+        "TOTAL_TXN": "$params.totalTransactions",
+        "DOC_DESC_NM": "Statement Ready Notification"
+      }
+    }
+  },
+  "filterFields": {
+    "statementType": ["monthly"]
+  }
+}

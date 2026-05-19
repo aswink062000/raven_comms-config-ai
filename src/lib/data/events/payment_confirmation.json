@@ -1,0 +1,35 @@
+{
+  "title": "payment_confirmation",
+  "properties": {
+    "params": {
+      "required": [
+        "fullName",
+        "accountNumber",
+        "paymentAmount",
+        "paymentDate",
+        "transactionId",
+        "recipientName"
+      ],
+      "properties": {
+        "fullName": {
+          "type": "string"
+        },
+        "accountNumber": {
+          "type": "string"
+        },
+        "paymentAmount": {
+          "type": "string"
+        },
+        "paymentDate": {
+          "type": "string"
+        },
+        "transactionId": {
+          "type": "string"
+        },
+        "recipientName": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

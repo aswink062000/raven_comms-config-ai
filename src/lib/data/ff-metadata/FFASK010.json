@@ -1,0 +1,18 @@
+{
+  "variables": [
+    "CUST_FULL_NM",
+    "ACCT_NO",
+    "CURR_BAL",
+    "ALERT_THRESHOLD",
+    "ALERT_DT",
+    "DOC_DESC_NM"
+  ],
+  "sampleData": {
+    "CUST_FULL_NM": "Vikram Singh",
+    "ACCT_NO": "XXXX6789",
+    "CURR_BAL": "₹1,250",
+    "ALERT_THRESHOLD": "₹2,000",
+    "ALERT_DT": "2026-05-19",
+    "DOC_DESC_NM": "Balance Alert Notification"
+  }
+}

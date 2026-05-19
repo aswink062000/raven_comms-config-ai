@@ -1,0 +1,26 @@
+{
+  "title": "account_address_update",
+  "properties": {
+    "params": {
+      "required": [
+        "fullName",
+        "productName",
+        "accountNumber"
+      ],
+
+      "properties": {
+        "fullName": {
+          "type": "string"
+        },
+
+        "productName": {
+          "type": "string"
+        },
+
+        "accountNumber": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "title": "account_upgrade",
+  "properties": {
+    "params": {
+      "required": [
+        "fullName",
+        "currentAccountType",
+        "newAccountType",
+        "accountNumber",
+        "upgradeDate"
+      ],
+      "properties": {
+        "fullName": {
+          "type": "string"
+        },
+        "currentAccountType": {
+          "type": "string"
+        },
+        "newAccountType": {
+          "type": "string"
+        },
+        "accountNumber": {
+          "type": "string"
+        },
+        "upgradeDate": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

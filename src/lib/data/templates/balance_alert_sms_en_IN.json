@@ -1,0 +1,21 @@
+{
+  "type": "SMS",
+  "event": "balance_alert",
+  "locale": ["en_IN"],
+  "metadata": {
+    "default": {
+      "templateContentId": "FFASK010",
+      "attributes": {
+        "CUST_FULL_NM": "$params.fullName",
+        "ACCT_NO": "$params.accountNumber",
+        "CURR_BAL": "$params.currentBalance",
+        "ALERT_THRESHOLD": "$params.alertThreshold",
+        "ALERT_DT": "$params.alertDate",
+        "DOC_DESC_NM": "Balance Alert Notification"
+      }
+    }
+  },
+  "filterFields": {
+    "alertType": ["low_balance"]
+  }
+}

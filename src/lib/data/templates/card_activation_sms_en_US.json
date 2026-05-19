@@ -1,0 +1,21 @@
+{
+  "type": "SMS",
+  "event": "card_activation",
+  "locale": ["en_US"],
+  "metadata": {
+    "default": {
+      "templateContentId": "FFASK003",
+      "attributes": {
+        "CUST_FULL_NM": "$params.fullName",
+        "CARD_TYPE": "$params.cardType",
+        "CARD_NO": "$params.cardNumber",
+        "ACTIVATION_DT": "$params.activationDate",
+        "EXPIRY_DT": "$params.expiryDate",
+        "DOC_DESC_NM": "Card Activation Notification"
+      }
+    }
+  },
+  "filterFields": {
+    "cardStatus": ["active"]
+  }
+}

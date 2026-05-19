@@ -1,0 +1,20 @@
+{
+  "variables": [
+    "CUST_FULL_NM",
+    "ACCT_NO",
+    "TXN_AMT",
+    "TXN_LOC",
+    "TXN_TIME",
+    "ALERT_ID",
+    "DOC_DESC_NM"
+  ],
+  "sampleData": {
+    "CUST_FULL_NM": "Kavita Desai",
+    "ACCT_NO": "XXXX3210",
+    "TXN_AMT": "₹1,50,000",
+    "TXN_LOC": "Delhi, India",
+    "TXN_TIME": "2026-05-19 18:45:00",
+    "ALERT_ID": "FRD-IN-2026-051902",
+    "DOC_DESC_NM": "Fraud Alert - Immediate Action Required"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "title": "card_activation",
+  "properties": {
+    "params": {
+      "required": [
+        "fullName",
+        "cardType",
+        "cardNumber",
+        "activationDate",
+        "expiryDate"
+      ],
+      "properties": {
+        "fullName": {
+          "type": "string"
+        },
+        "cardType": {
+          "type": "string"
+        },
+        "cardNumber": {
+          "type": "string"
+        },
+        "activationDate": {
+          "type": "string"
+        },
+        "expiryDate": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

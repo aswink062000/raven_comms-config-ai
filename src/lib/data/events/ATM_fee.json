@@ -1,0 +1,27 @@
+{
+  "title": "ATM_fee",
+
+  "properties": {
+    "params": {
+      "required": [
+        "fullName",
+        "productName",
+        "accountNumber"
+      ],
+
+      "properties": {
+        "fullName": {
+          "type": "string"
+        },
+
+        "productName": {
+          "type": "string"
+        },
+
+        "accountNumber": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

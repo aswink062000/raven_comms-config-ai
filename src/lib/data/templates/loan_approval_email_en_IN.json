@@ -1,0 +1,23 @@
+{
+  "type": "EMAIL",
+  "event": "loan_approval",
+  "locale": ["en_IN"],
+  "metadata": {
+    "default": {
+      "templateContentId": "FFASK005",
+      "attributes": {
+        "CUST_FULL_NM": "$params.fullName",
+        "LOAN_AMT": "$params.loanAmount",
+        "LOAN_TYPE": "$params.loanType",
+        "INTEREST_RATE": "$params.interestRate",
+        "LOAN_TERM": "$params.loanTerm",
+        "ACCT_NO": "$params.accountNumber",
+        "APPROVAL_DT": "$params.approvalDate",
+        "DOC_DESC_NM": "Loan Approval Notification"
+      }
+    }
+  },
+  "filterFields": {
+    "loanStatus": ["approved"]
+  }
+}

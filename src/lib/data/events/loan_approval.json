@@ -1,0 +1,39 @@
+{
+  "title": "loan_approval",
+  "properties": {
+    "params": {
+      "required": [
+        "fullName",
+        "loanAmount",
+        "loanType",
+        "interestRate",
+        "loanTerm",
+        "accountNumber",
+        "approvalDate"
+      ],
+      "properties": {
+        "fullName": {
+          "type": "string"
+        },
+        "loanAmount": {
+          "type": "string"
+        },
+        "loanType": {
+          "type": "string"
+        },
+        "interestRate": {
+          "type": "string"
+        },
+        "loanTerm": {
+          "type": "string"
+        },
+        "accountNumber": {
+          "type": "string"
+        },
+        "approvalDate": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

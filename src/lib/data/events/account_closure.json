@@ -1,0 +1,35 @@
+{
+  "title": "account_closure",
+  "properties": {
+    "params": {
+      "required": [
+        "fullName",
+        "accountNumber",
+        "accountType",
+        "closureDate",
+        "finalBalance",
+        "refundAmount"
+      ],
+      "properties": {
+        "fullName": {
+          "type": "string"
+        },
+        "accountNumber": {
+          "type": "string"
+        },
+        "accountType": {
+          "type": "string"
+        },
+        "closureDate": {
+          "type": "string"
+        },
+        "finalBalance": {
+          "type": "string"
+        },
+        "refundAmount": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

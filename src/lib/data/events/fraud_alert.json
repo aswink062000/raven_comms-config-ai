@@ -1,0 +1,35 @@
+{
+  "title": "fraud_alert",
+  "properties": {
+    "params": {
+      "required": [
+        "fullName",
+        "accountNumber",
+        "transactionAmount",
+        "transactionLocation",
+        "transactionTime",
+        "alertId"
+      ],
+      "properties": {
+        "fullName": {
+          "type": "string"
+        },
+        "accountNumber": {
+          "type": "string"
+        },
+        "transactionAmount": {
+          "type": "string"
+        },
+        "transactionLocation": {
+          "type": "string"
+        },
+        "transactionTime": {
+          "type": "string"
+        },
+        "alertId": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

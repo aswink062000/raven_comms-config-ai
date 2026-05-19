@@ -1,0 +1,22 @@
+{
+  "type": "PUSH",
+  "event": "fraud_alert",
+  "locale": ["en_IN"],
+  "metadata": {
+    "default": {
+      "templateContentId": "FFASK012",
+      "attributes": {
+        "CUST_FULL_NM": "$params.fullName",
+        "ACCT_NO": "$params.accountNumber",
+        "TXN_AMT": "$params.transactionAmount",
+        "TXN_LOC": "$params.transactionLocation",
+        "TXN_TIME": "$params.transactionTime",
+        "ALERT_ID": "$params.alertId",
+        "DOC_DESC_NM": "Fraud Alert - Immediate Action Required"
+      }
+    }
+  },
+  "filterFields": {
+    "alertSeverity": ["critical"]
+  }
+}

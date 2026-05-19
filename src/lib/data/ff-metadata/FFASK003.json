@@ -1,0 +1,18 @@
+{
+  "variables": [
+    "CUST_FULL_NM",
+    "CARD_TYPE",
+    "CARD_NO",
+    "ACTIVATION_DT",
+    "EXPIRY_DT",
+    "DOC_DESC_NM"
+  ],
+  "sampleData": {
+    "CUST_FULL_NM": "Rajesh Kumar",
+    "CARD_TYPE": "Platinum Credit Card",
+    "CARD_NO": "XXXX-XXXX-XXXX-5678",
+    "ACTIVATION_DT": "2026-05-19",
+    "EXPIRY_DT": "2031-05-31",
+    "DOC_DESC_NM": "Card Activation Notification"
+  }
+}

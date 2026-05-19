@@ -1,0 +1,22 @@
+{
+  "type": "EMAIL",
+  "event": "payment_confirmation",
+  "locale": ["en_IN"],
+  "metadata": {
+    "default": {
+      "templateContentId": "FFASK002",
+      "attributes": {
+        "CUST_FULL_NM": "$params.fullName",
+        "ACCT_NO": "$params.accountNumber",
+        "PAYMENT_AMT": "$params.paymentAmount",
+        "PAYMENT_DT": "$params.paymentDate",
+        "TXN_ID": "$params.transactionId",
+        "RECIPIENT_NM": "$params.recipientName",
+        "DOC_DESC_NM": "Payment Confirmation"
+      }
+    }
+  },
+  "filterFields": {
+    "paymentStatus": ["completed"]
+  }
+}

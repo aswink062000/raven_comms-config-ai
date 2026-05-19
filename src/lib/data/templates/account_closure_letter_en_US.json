@@ -1,0 +1,22 @@
+{
+  "type": "LETTER",
+  "event": "account_closure",
+  "locale": ["en_US"],
+  "metadata": {
+    "default": {
+      "templateContentId": "FFASK007",
+      "attributes": {
+        "CUST_FULL_NM": "$params.fullName",
+        "ACCT_NO": "$params.accountNumber",
+        "ACCT_TYPE": "$params.accountType",
+        "CLOSURE_DT": "$params.closureDate",
+        "FINAL_BAL": "$params.finalBalance",
+        "REFUND_AMT": "$params.refundAmount",
+        "DOC_DESC_NM": "Account Closure Confirmation"
+      }
+    }
+  },
+  "filterFields": {
+    "closureReason": ["customer_request"]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "title": "balance_alert",
+  "properties": {
+    "params": {
+      "required": [
+        "fullName",
+        "accountNumber",
+        "currentBalance",
+        "alertThreshold",
+        "alertDate"
+      ],
+      "properties": {
+        "fullName": {
+          "type": "string"
+        },
+        "accountNumber": {
+          "type": "string"
+        },
+        "currentBalance": {
+          "type": "string"
+        },
+        "alertThreshold": {
+          "type": "string"
+        },
+        "alertDate": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

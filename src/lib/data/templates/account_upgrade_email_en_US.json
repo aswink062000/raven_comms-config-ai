@@ -1,0 +1,21 @@
+{
+  "type": "EMAIL",
+  "event": "account_upgrade",
+  "locale": ["en_US"],
+  "metadata": {
+    "default": {
+      "templateContentId": "FFASK004",
+      "attributes": {
+        "CUST_FULL_NM": "$params.fullName",
+        "CURRENT_ACCT_TYPE": "$params.currentAccountType",
+        "NEW_ACCT_TYPE": "$params.newAccountType",
+        "ACCT_NO": "$params.accountNumber",
+        "UPGRADE_DT": "$params.upgradeDate",
+        "DOC_DESC_NM": "Account Upgrade Confirmation"
+      }
+    }
+  },
+  "filterFields": {
+    "upgradeStatus": ["approved"]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "type": "EMAIL",
+
+  "event": "ATM_fee",
+
+  "locale": ["en_US"],
+
+  "metadata": {
+    "default": {
+      "templateContentId": "FFASK001",
+
+      "attributes": {
+        "PRDT_NM": "$params.productName",
+        "DOC_DESC_NM": "ATM Fee Charged Reversal",
+        "CUST_FULL_NM": "$params.fullName",
+        "BUSINESS_CHECKING_ACCT_NO": "$params.accountNumber"
+      }
+    }
+  },
+
+  "filterFields": {
+    "eventStatus": [
+      "filter-me"
+    ]
+  }
+}

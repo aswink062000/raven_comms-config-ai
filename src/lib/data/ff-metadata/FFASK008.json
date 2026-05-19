@@ -1,0 +1,20 @@
+{
+  "variables": [
+    "CUST_FULL_NM",
+    "ACCT_NO",
+    "ACCT_TYPE",
+    "OPENING_DT",
+    "BRANCH_NM",
+    "CUST_SVC_NO",
+    "DOC_DESC_NM"
+  ],
+  "sampleData": {
+    "CUST_FULL_NM": "Ananya Reddy",
+    "ACCT_NO": "XXXX8765",
+    "ACCT_TYPE": "Premium Savings Account",
+    "OPENING_DT": "2026-05-19",
+    "BRANCH_NM": "Mumbai Central Branch",
+    "CUST_SVC_NO": "1800-123-4567",
+    "DOC_DESC_NM": "Welcome to Our Bank"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "LETTER",
+  "event": "welcome_letter",
+  "locale": ["en_IN"],
+  "metadata": {
+    "default": {
+      "templateContentId": "FFASK008",
+      "attributes": {
+        "CUST_FULL_NM": "$params.fullName",
+        "ACCT_NO": "$params.accountNumber",
+        "ACCT_TYPE": "$params.accountType",
+        "OPENING_DT": "$params.openingDate",
+        "BRANCH_NM": "$params.branchName",
+        "CUST_SVC_NO": "$params.customerServiceNumber",
+        "DOC_DESC_NM": "Welcome to Our Bank"
+      }
+    }
+  },
+  "filterFields": {
+    "accountStatus": ["active"]
+  }
+}
