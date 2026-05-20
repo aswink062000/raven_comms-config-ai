@@ -6,7 +6,13 @@
 
 ### The Challenge
 
-During unit testing of communication systems, developers face a time-consuming and error-prone process:
+During unit testing of communication systems, developers face a time-consuming and error-prone process
+
+### Pain Point:
+In Amex's Enterprise Communication Platform (ECP), communication templates are used to generate various types of communications such as emails, letters, and SMS messages. These templates create communications based on an input payload provided to them. A significant challenge when modifying existing templates or creating new ones is generating the correct input payload for the template. The complexity arises because the communication platform incorporates numerous internal business rules and configurations, which complicate the process of input payload generation.
+
+### Solution:
+A pilot project is currently underway where the team is leveraging the enterprise version of GPT to generate the correct input payload. By providing GPT with the template content, variables, communication-related configurations, and any necessary customizations for different test cases, it can produce a customized input payload efficiently.
 
 **Traditional Manual Process:**
 1. ✋ Open comm-config repository
