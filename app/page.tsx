@@ -652,7 +652,7 @@ const [validation, setValidation] =
                         </p>
                         <p className="text-xs text-amber-800 dark:text-amber-200">
                           Account numbers and personal information in generated payloads are AI-created masked samples (e.g., XXXX1234). 
-                          Please replace with proper account numbers and real data before using in production systems.
+                          Please replace with proper account numbers & varaianle if required before using.
                         </p>
                       </div>
                     </div>
