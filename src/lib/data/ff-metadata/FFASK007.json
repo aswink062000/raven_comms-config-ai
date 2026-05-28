@@ -1,20 +1,10 @@
 {
   "variables": [
-    "CUST_FULL_NM",
-    "ACCT_NO",
-    "ACCT_TYPE",
-    "CLOSURE_DT",
-    "FINAL_BAL",
-    "REFUND_AMT",
-    "DOC_DESC_NM"
-  ],
-  "sampleData": {
-    "CUST_FULL_NM": "Robert Anderson",
-    "ACCT_NO": "XXXX5432",
-    "ACCT_TYPE": "Savings Account",
-    "CLOSURE_DT": "2026-06-15",
-    "FINAL_BAL": "$1,250.00",
-    "REFUND_AMT": "$1,250.00",
-    "DOC_DESC_NM": "Account Closure Confirmation"
-  }
+    "communication.params.fullName",
+    "communication.params.accountNumber",
+    "communication.params.accountType",
+    "communication.params.closureDate",
+    "communication.params.finalBalance",
+    "communication.params.refundAmount"
+  ]
 }

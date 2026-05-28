@@ -20,7 +20,7 @@
 
   "filterFields": {
     "eventStatus": [
-      "filter-me"
+      "open"
     ]
   }
 }

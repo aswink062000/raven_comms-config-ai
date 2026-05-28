@@ -51,6 +51,12 @@ function buildEnhancedPrompt(
   };
 
   const sampleData = ffMetadata?.sampleData || {};
+
+  // Extract param names from ff-metadata variables (format: communication.params.fieldName)
+  const ffVariables = (ffMetadata?.variables || []) as string[];
+  const ffParamPaths = ffVariables
+    .filter((v: string) => v.startsWith("communication.params."))
+    .map((v: string) => v.replace("communication.params.", ""));
   
   let prompt = `You are a precise enterprise banking data generator. Your task is to generate ONLY valid JSON data.
 
@@ -75,12 +81,13 @@ REQUIRED OUTPUT STRUCTURE:
 }
 
 REQUIRED FIELDS (ALL MUST BE PRESENT):
-${requiredFields.map((field, idx) => `${idx + 1}. "${field}" - ${getFieldDescription(field, sampleData)}`).join("\n")}
+${requiredFields.map((field, idx) => `${idx + 1}. "${field}" - ${getFieldDescription(field)}`).join("\n")}
+
+FF METADATA VARIABLE PATHS:
+${ffVariables.map((v: string) => `• ${v}`).join("\n")}
 
 CHANNEL TYPE: ${template.type}
 LOCALE: ${template.locale?.[0] || "en_US"}
-
-${Object.keys(sampleData).length > 0 ? `SAMPLE DATA FOR REFERENCE:\n${JSON.stringify(sampleData, null, 2)}` : ""}
 
 VALIDATION RULES:
 - accountNumber: Use format "XXXX1234" or "4532-XXXX-XXXX-1234"
@@ -99,22 +106,50 @@ IMPORTANT: Return ONLY the JSON object. No additional text, no markdown formatti
 /**
  * Gets a description for a field based on its name
  */
-function getFieldDescription(field: string, sampleData: any): string {
-  if (sampleData[field]) {
-    return `Example: "${sampleData[field]}"`;
-  }
-
+function getFieldDescription(field: string): string {
   const descriptions: Record<string, string> = {
     fullName: "Full customer name (e.g., 'John Michael Smith')",
     accountNumber: "Masked account number (e.g., 'XXXX1234')",
     productName: "Banking product name (e.g., 'Premium Checking Account')",
     amount: "Transaction amount (e.g., '150.00')",
+    paymentAmount: "Payment amount (e.g., '₹15,000' or '$250.00')",
+    loanAmount: "Loan amount (e.g., '₹25,00,000' or '$50,000')",
+    transactionAmount: "Transaction amount (e.g., '$2,500.00')",
+    finalBalance: "Final balance (e.g., '$1,250.00')",
+    refundAmount: "Refund amount (e.g., '$1,250.00')",
+    currentBalance: "Current balance (e.g., '$85.50')",
+    alertThreshold: "Alert threshold (e.g., '$100.00')",
     transactionId: "Unique transaction ID (e.g., 'TXN-2024-001234')",
+    alertId: "Alert ID (e.g., 'FRD-2026-051901')",
     date: "Date in ISO format (e.g., '2024-01-15')",
+    paymentDate: "Payment date (e.g., '2026-05-19')",
+    activationDate: "Activation date (e.g., '2026-05-19')",
+    expiryDate: "Expiry date (e.g., '2031-05-31')",
+    closureDate: "Closure date (e.g., '2026-06-15')",
+    openingDate: "Account opening date (e.g., '2026-05-19')",
+    upgradeDate: "Upgrade date (e.g., '2026-05-20')",
+    approvalDate: "Approval date (e.g., '2026-05-18')",
+    statementDate: "Statement date (e.g., '2026-05-01')",
+    alertDate: "Alert date (e.g., '2026-05-19')",
     email: "Email address (e.g., 'john.smith@example.com')",
     mobile: "Phone number (e.g., '+1-555-0123')",
     customerId: "Customer ID (e.g., 'CUST-123456')",
     issuer: "Issuer code (e.g., '001')",
+    cardType: "Card type (e.g., 'Platinum Credit Card')",
+    cardNumber: "Masked card number (e.g., 'XXXX-XXXX-XXXX-5678')",
+    accountType: "Account type (e.g., 'Savings Account')",
+    currentAccountType: "Current account type (e.g., 'Basic Savings Account')",
+    newAccountType: "New account type (e.g., 'Premium Savings Account')",
+    loanType: "Loan type (e.g., 'Home Loan')",
+    interestRate: "Interest rate (e.g., '8.5%')",
+    loanTerm: "Loan term (e.g., '20 years')",
+    branchName: "Branch name (e.g., 'Mumbai Central Branch')",
+    customerServiceNumber: "Customer service number (e.g., '1800-123-4567')",
+    recipientName: "Recipient name (e.g., 'Reliance Energy')",
+    statementPeriod: "Statement period (e.g., 'April 2026')",
+    totalTransactions: "Total transactions (e.g., '45')",
+    transactionLocation: "Transaction location (e.g., 'New York, NY')",
+    transactionTime: "Transaction time (e.g., '2026-05-19 14:35:00')",
   };
 
   return descriptions[field] || "Realistic banking value";

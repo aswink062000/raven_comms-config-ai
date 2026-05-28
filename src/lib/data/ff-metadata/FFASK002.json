@@ -1,20 +1,10 @@
 {
   "variables": [
-    "CUST_FULL_NM",
-    "ACCT_NO",
-    "PAYMENT_AMT",
-    "PAYMENT_DT",
-    "TXN_ID",
-    "RECIPIENT_NM",
-    "DOC_DESC_NM"
-  ],
-  "sampleData": {
-    "CUST_FULL_NM": "Amit Patel",
-    "ACCT_NO": "XXXX2468",
-    "PAYMENT_AMT": "₹15,000",
-    "PAYMENT_DT": "2026-05-19",
-    "TXN_ID": "TXN-2026-051901",
-    "RECIPIENT_NM": "Reliance Energy",
-    "DOC_DESC_NM": "Payment Confirmation"
-  }
+    "communication.params.fullName",
+    "communication.params.accountNumber",
+    "communication.params.paymentAmount",
+    "communication.params.paymentDate",
+    "communication.params.transactionId",
+    "communication.params.recipientName"
+  ]
 }

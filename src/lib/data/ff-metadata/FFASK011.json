@@ -1,20 +1,10 @@
 {
   "variables": [
-    "CUST_FULL_NM",
-    "ACCT_NO",
-    "TXN_AMT",
-    "TXN_LOC",
-    "TXN_TIME",
-    "ALERT_ID",
-    "DOC_DESC_NM"
-  ],
-  "sampleData": {
-    "CUST_FULL_NM": "David Thompson",
-    "ACCT_NO": "XXXX9012",
-    "TXN_AMT": "$2,500.00",
-    "TXN_LOC": "New York, NY",
-    "TXN_TIME": "2026-05-19 14:35:00",
-    "ALERT_ID": "FRD-2026-051901",
-    "DOC_DESC_NM": "Suspicious Activity Alert"
-  }
+    "communication.params.fullName",
+    "communication.params.accountNumber",
+    "communication.params.transactionAmount",
+    "communication.params.transactionLocation",
+    "communication.params.transactionTime",
+    "communication.params.alertId"
+  ]
 }

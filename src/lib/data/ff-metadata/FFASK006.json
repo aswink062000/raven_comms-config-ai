@@ -1,18 +1,9 @@
 {
   "variables": [
-    "CUST_FULL_NM",
-    "ACCT_NO",
-    "STMT_PERIOD",
-    "STMT_DT",
-    "TOTAL_TXN",
-    "DOC_DESC_NM"
-  ],
-  "sampleData": {
-    "CUST_FULL_NM": "Michael Chen",
-    "ACCT_NO": "XXXX7890",
-    "STMT_PERIOD": "April 2026",
-    "STMT_DT": "2026-05-01",
-    "TOTAL_TXN": "45",
-    "DOC_DESC_NM": "Statement Ready Notification"
-  }
+    "communication.params.fullName",
+    "communication.params.accountNumber",
+    "communication.params.statementPeriod",
+    "communication.params.statementDate",
+    "communication.params.totalTransactions"
+  ]
 }

@@ -1,18 +1,9 @@
 {
   "variables": [
-    "CUST_FULL_NM",
-    "CURRENT_ACCT_TYPE",
-    "NEW_ACCT_TYPE",
-    "ACCT_NO",
-    "UPGRADE_DT",
-    "DOC_DESC_NM"
-  ],
-  "sampleData": {
-    "CUST_FULL_NM": "Sarah Johnson",
-    "CURRENT_ACCT_TYPE": "Basic Savings Account",
-    "NEW_ACCT_TYPE": "Premium Savings Account",
-    "ACCT_NO": "XXXX9876",
-    "UPGRADE_DT": "2026-05-20",
-    "DOC_DESC_NM": "Account Upgrade Confirmation"
-  }
+    "communication.params.fullName",
+    "communication.params.currentAccountType",
+    "communication.params.newAccountType",
+    "communication.params.accountNumber",
+    "communication.params.upgradeDate"
+  ]
 }

@@ -1,15 +1,7 @@
 {
   "variables": [
-    "PRDT_NM",
-    "DOC_DESC_NM",
-    "CUST_FULL_NM",
-    "BUSINESS_CHECKING_ACCT_NO"
-  ],
-
-  "sampleData": {
-    "PRDT_NM": "Business Account",
-    "DOC_DESC_NM": "ATM Fee Charged Reversal",
-    "CUST_FULL_NM": "John Doe",
-    "BUSINESS_CHECKING_ACCT_NO": "XXXX1234"
-  }
+    "communication.params.fullName",
+    "communication.params.productName",
+    "communication.params.accountNumber"
+  ]
 }
