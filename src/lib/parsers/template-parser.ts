@@ -63,9 +63,10 @@ export function getTemplateByFFId(
       )
     );
 
+    // Support both flat metadata.templateContentId and nested metadata.default.templateContentId
     const templateContentId =
-      content?.metadata?.default
-        ?.templateContentId;
+      content?.metadata?.templateContentId ??
+      content?.metadata?.default?.templateContentId;
 
     if (
       templateContentId === ffId

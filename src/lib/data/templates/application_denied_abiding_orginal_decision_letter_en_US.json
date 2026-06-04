@@ -1,0 +1,46 @@
+{
+  "endpoints": [
+    "LETTER"
+  ],
+  "encoding": "UTF8",
+  "locale": [
+    "en_US"
+  ],
+  "type": "LETTER",
+  "version": null,
+  "templateStatus": "Active",
+  "name": "application_denied_abiding_orginal_decision_letter_en_US",
+  "event": "application_denied_abiding_orginal_decision",
+  "metadata": {
+    "templateContentId": "SNA0FYI655",
+    "destination": "SROC",
+    "jurisdiction": "XX",
+    "emailTypeCd": "P",
+    "emailRelTypeCd": "1001",
+    "emailReturnCd": "8.5.0.4",
+    "subAppCode": "BLANK",
+    "appCode": "MYCA",
+    "emailRoleCd": "1",
+    "emailPurpose": "1",
+    "channel": "2",
+    "mfArchivalRequired": "Y",
+    "fromAddress": "American Express,PO Box 31525,Salt Lake City, UT 84131",
+    "provider": "BPS",
+    "archival": {
+      "properties": {
+        "documentType": "CARD_APPLICATION_PROCESS_COMMUNICATION",
+        "recordClass": "LNS1080",
+        "repository": "COMMUNICATIONS"
+      },
+      "attributes": {
+        "ISSUED_DATE": "$params.effectiveDate",
+        "DOC_DESC_NM": "Card application declined",
+        "CUST_FULL_NM": "$params.fullName",
+        "PROCESS_CONTROL_NO": "$params.referenceNumber",
+        "COMMUN_ID": "$params.conversationId",
+        "PRDT_NM": "$params.productName",
+        "LOB_NM": "$params.lineOfBusinessType"
+      }
+    }
+  }
+}

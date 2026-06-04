@@ -1,0 +1,23 @@
+{
+  "variables": [
+    "communication.params.fullName",
+    "communication.params.customerAccountNumber",
+    "communication.params.decisionIndicator",
+    "communication.params.weNeedCodes",
+    "communication.params.editParagraph2",
+    "communication.params.bankName",
+    "communication.params.consumerAgencyDetails",
+    "communication.params.creditBureauAddress",
+    "communication.params.referenceNumber",
+    "communication.params.codeIndicator",
+    "communication.params.returnAddressCode",
+    "communication.params.address.addressLine1",
+    "communication.params.address.addressLine2",
+    "communication.params.address.addressLine3",
+    "communication.params.address.city",
+    "communication.params.address.stateCode",
+    "communication.params.address.postalCode",
+    "communication.params.address.countryCode",
+    "communication.params.creditBureauCode"
+  ]
+}

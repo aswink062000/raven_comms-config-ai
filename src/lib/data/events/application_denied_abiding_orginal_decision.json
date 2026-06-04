@@ -1,0 +1,72 @@
+{
+  "schema": "http://json-schema.org/draft-04/schema#",
+  "description": "application denied abiding orginal decision",
+  "title": "application_denied_abiding_orginal_decision",
+  "type": "object",
+  "metadata": {
+    "processingWindow": 86400,
+    "ctdbIndicator": "c",
+    "isReconciliationEligible": true,
+    "trackFinalState": true
+  },
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "params": {
+      "type": "object",
+      "required": [
+        "fullName",
+        "returnAddressCode",
+        "bankName",
+        "weNeedCodes",
+        "consumerAgencyDetails",
+        "creditBureauAddress",
+        "codeIndicator"
+      ],
+      "properties": {
+
+        "fullName": {
+          "type": "string"
+        },
+        "consumerAgencyDetails": {
+          "type": "array"
+        },
+        "customerAccountNumber": {
+          "type": "string"
+        },
+        "editParagraph1": {
+          "type": "string"
+        },
+        "editParagraph2": {
+          "type": "string"
+        },
+        "returnAddressCode": {
+          "type": "string"
+        },
+        "weNeedCodes": {
+          "type": "string"
+        },
+        "referenceNumber": {
+          "type": "string"
+        },
+        "decisionIndicator": {
+          "type": "string"
+        },
+        "creditBureauAddress": {
+          "type": "array"
+        },
+        "bankName": {
+          "type": "string"
+        },
+        "codeIndicator":{
+          "type": "string"
+        }
+      }
+    }
+  },
+  "required": [
+    "id",
+    "params"
+  ]
+}
