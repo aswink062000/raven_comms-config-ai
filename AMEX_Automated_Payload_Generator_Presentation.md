@@ -1,135 +1,112 @@
-# AMEX Automated Input Payload Generator
+Thank you.
 
-## Presentation Script
+Let me walk you through how the Automated Input Payload Generator works.
 
-### Introduction
+### Screen 1: Template Selection
 
-Good afternoon everyone.
-
-Today, I would like to demonstrate a solution developed by our EY team to address a key challenge within the American Express Global Merchant Communication platform.
-
-AMEX processes approximately **40 million communication transactions**, including Email, SMS, Push Notifications, and Letters across multiple regions and business domains.
-
-Currently, developers and testers rely on a **Custom GPT-based approach** to assist in generating communication payloads. While helpful, creating valid test payloads for complex communication templates still requires significant manual effort and domain knowledge.
-
----
-
-# Current Challenges
-
-When a developer needs to test a communication template, they must:
-
-* Identify the correct template and FF ID.
-* Manually review communication configuration files.
-* Analyze event JSON schemas.
-* Identify template variables and required parameters.
-* Cross-check business rules and filter fields.
-* Construct the payload manually.
-* Validate the payload before testing.
-
-### Challenges with Current Process
-
-This process typically takes **10 to 15 minutes per payload** and introduces risks such as:
-
-* Missing mandatory fields.
-* Incorrect variable mapping.
-* Invalid payload structures.
-* Delays in development and testing cycles.
-
-With thousands of communication templates and millions of transactions, even small inefficiencies can result in substantial productivity loss.
-
----
-
-# Solution
-
-To address these challenges, we developed the **Automated Input Payload Generator**, an AI-powered GUI tool.
-
-### Goal
-
-Generate a fully validated communication payload in **less than one minute**, with minimal developer effort.
-
-The developer only needs to provide:
+Here we start by providing three inputs:
 
 * FF ID
 * Locale
 * Communication Channel
 
-The tool then automatically:
+These are the only inputs required from the developer.
 
-* Resolves the communication template.
-* Reads the associated event schema.
-* Identifies all required template variables.
-* Applies business rules and filter conditions.
+Traditionally, developers would need to navigate through multiple communication configuration files and event schemas to understand what information is required for payload creation.
+
+---
+
+### Template Resolution
+
+Once the inputs are provided, the tool automatically identifies the corresponding communication template.
+
+Behind the scenes, the application:
+
+* Resolves the template mapping.
+* Identifies the associated event.
+* Retrieves communication configuration details.
+
+The developer does not need to manually search through comm-config files or understand naming conventions.
+
+---
+
+### Generate Payload
+
+Now I'll click on **Generate Payload**.
+
+At this point, the tool performs several automated steps:
+
+* Loads the associated event schema.
+* Identifies required event parameters.
+* Extracts template variables.
+* Applies business rules and filter fields.
+* Determines recipient structure based on channel.
 * Generates realistic sample values.
-* Validates the payload structure.
-* Produces a ready-to-use payload.
 
-What previously required multiple manual steps can now be completed with a **single click**.
+All of this happens automatically within a few seconds.
 
 ---
 
-# Key Benefits
+### Generated Payload Screen
 
-## Faster Development
+After generation, the tool displays a complete payload ready for testing.
 
-| Process        | Time          |
-| -------------- | ------------- |
-| Manual Process | 10–15 Minutes |
-| Automated Tool | 3–5 Seconds   |
+As you can see, all required attributes are automatically populated.
 
----
+Without this tool, developers would have to manually inspect:
 
-## Improved Accuracy
+* Event JSON files
+* Template configurations
+* Business rules
+* Filter fields
 
-* Automatic identification of required parameters.
-* Reduced human errors.
-* Built-in schema validation.
-* Consistent payload generation.
+and then manually construct the payload.
 
----
-
-## Better Developer Experience
-
-* No need to understand complex communication configurations.
-* No need to manually inspect event JSON files.
-* Easy payload export and reuse.
-* Simplified testing workflow.
+This automation significantly reduces that effort.
 
 ---
 
-## Easy Maintenance
+### Validation
 
-Whenever a template changes:
+One important capability is payload validation.
 
-* Developers simply regenerate the payload.
-* The tool automatically adapts to updated template requirements.
-* No manual re-analysis of configuration files is required.
+The tool automatically validates:
 
----
+* Required parameters
+* Payload structure
+* Data types
+* Mandatory fields
 
-# Business Impact
-
-### Before
-
-* 10–15 minutes per payload
-* Manual configuration analysis
-* Error-prone process
-* Dependency on domain knowledge
-
-### After
-
-* 3–5 seconds per payload
-* One-click generation
-* Automated validation
-* Improved developer productivity
+This helps reduce payload-related testing failures and improves overall accuracy.
 
 ---
 
-# Conclusion
+### Payload History
 
-The Automated Input Payload Generator significantly reduces the effort required to create communication payloads.
+The application also maintains payload history.
 
-By leveraging AI and automation, the solution transforms a manual and error-prone process into a fast, reliable, and scalable workflow.
+This allows developers to quickly reload previously generated payloads and avoid repeating the same configuration steps.
 
-This enables developers and testers to focus on business validation and delivery rather than spending time constructing payloads manually.
+---
 
-Thank You.
+### Export Options
+
+Once the payload is generated, developers can:
+
+* Copy the payload directly.
+* Download it as JSON.
+* Reuse it immediately for testing purposes.
+
+This makes the testing process much faster and more efficient.
+
+---
+
+### Closing
+
+To summarize, the workflow is:
+
+FF ID Selection → Template Resolution → Event Schema Analysis → Payload Generation → Validation → Export
+
+The tool eliminates manual payload creation and reduces the effort from several minutes to just a few seconds, while also improving consistency and accuracy.
+
+Thank you.
