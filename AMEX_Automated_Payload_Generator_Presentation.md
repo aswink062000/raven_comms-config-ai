@@ -2,7 +2,7 @@ Thank you.
 
 Let me walk you through the Automated Input Payload Generator.
 
-Probelm staement 
+Problem statement 
 
 After creating a Communication Template, developers require an input payload to trigger the communication and validate the generated preview. To construct this payload, they must navigate through the variables used in the template, multiple configuration files, and event schemas to understand the expected input structure. The complexity arises from the numerous internal business rules and configurations within the Communication Platform, making the process of generating the input payload both time-consuming and challenging.
 
