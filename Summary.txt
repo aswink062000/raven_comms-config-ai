@@ -1,0 +1,12 @@
+{
+  "title": "ECP - Automated Input Payload Generator",
+  "summary": "The ECP Automated Input Payload Generator is an AI-driven tool that streamlines the creation of valid JSON test payloads for multi-channel customer communications. It automatically cross-references event schemas, business rules, and template definitions to instantly assemble required parameters. This eliminates manual configuration tracing, drastically reducing testing time and removing formatting errors from the payload generation process.",
+  "tags": "AI Payload Generation, Communication Templates, JSON Automation, Testing Acceleration, Gemini AI, ECP, Developer Productivity, Schema Validation, Process Automation, QA Tooling, Event Driven Architecture, Cross-Channel Communication",
+  "roi": {
+    "metric": "Payload Creation Time",
+    "value": "99% faster (from 15 mins to 3s)",
+    "detail": "Manual cross-referencing of config files → one-click AI-driven payload assembly with strict AJV validation"
+  },
+  "complexity": "Medium",
+  "status": "Production"
+}
